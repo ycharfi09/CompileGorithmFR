@@ -1,0 +1,28 @@
+Algorithme RechercheTableau
+Variables
+    nombres: Tableau[10] de Entier
+    i, recherche: Entier
+    trouve: Booleen
+Debut
+    // Initialiser le tableau
+    Pour i allant de 0 a 9 Faire
+        nombres[i] := i * 2
+    FinPour
+    
+    // Rechercher la valeur 8
+    recherche := 8
+    trouve := Faux
+    i := 0
+    
+    TantQue i < 10 ET NON trouve Faire
+        Si nombres[i] = recherche Alors
+            trouve := Vrai
+            Ecrire("Valeur trouvée à l'indice:", i)
+        FinSi
+        i := i + 1
+    FinTantQue
+    
+    Si NON trouve Alors
+        Ecrire("Valeur non trouvée")
+    FinSi
+Fin

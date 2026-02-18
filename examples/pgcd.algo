@@ -1,0 +1,17 @@
+Algorithme PGCD
+Variables
+    a, b, reste: Entier
+Debut
+    a := 48
+    b := 18
+    
+    Ecrire("Calcul du PGCD de", a, "et", b)
+    
+    TantQue b <> 0 Faire
+        reste := a Mod b
+        a := b
+        b := reste
+    FinTantQue
+    
+    Ecrire("Le PGCD est:", a)
+Fin

@@ -1,0 +1,8 @@
+Algorithme Bonjour
+Variables
+    nom: Chaine
+Debut
+    Ecrire("Entrez votre nom:")
+    Lire(nom)
+    Ecrire("Bonjour", nom)
+Fin

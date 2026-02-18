@@ -1,0 +1,11 @@
+Algorithme BoucleTantQue
+Variables
+    compteur: Entier
+Debut
+    compteur := 1
+    TantQue compteur <= 5 Faire
+        Ecrire("Compteur:", compteur)
+        compteur := compteur + 1
+    FinTantQue
+    Ecrire("Boucle terminée")
+Fin
