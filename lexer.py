@@ -6,7 +6,7 @@ Converts source code into tokens
 import re
 from enum import Enum, auto
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List, Optional, Any
 
 
 class TokenType(Enum):
@@ -88,7 +88,7 @@ class TokenType(Enum):
 @dataclass
 class Token:
     type: TokenType
-    value: any
+    value: Any
     line: int
     column: int
 

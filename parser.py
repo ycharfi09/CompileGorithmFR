@@ -386,7 +386,6 @@ class Parser:
         left = self.parse_logical_and()
         
         while self.current_token().type == TokenType.OU:
-            op = self.current_token().value
             self.advance()
             right = self.parse_logical_and()
             left = BinaryOp(left, 'OU', right)
@@ -397,7 +396,6 @@ class Parser:
         left = self.parse_logical_not()
         
         while self.current_token().type == TokenType.ET:
-            op = self.current_token().value
             self.advance()
             right = self.parse_logical_not()
             left = BinaryOp(left, 'ET', right)
