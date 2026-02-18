@@ -1,0 +1,11 @@
+Algorithme BoucleRepeter
+Variables
+    compteur: Entier
+Debut
+    compteur := 1
+    Repeter
+        Ecrire("Compteur:", compteur)
+        compteur := compteur + 1
+    Jusqu'a compteur > 5
+    Ecrire("Boucle terminée")
+Fin
