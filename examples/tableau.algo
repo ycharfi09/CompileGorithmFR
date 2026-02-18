@@ -1,0 +1,21 @@
+Algorithme TableauSimple
+Variables
+    notes: Tableau[5] de Entier
+    i, somme: Entier
+    moyenne: Reel
+Debut
+    notes[0] := 15
+    notes[1] := 18
+    notes[2] := 12
+    notes[3] := 16
+    notes[4] := 14
+    
+    somme := 0
+    Pour i allant de 0 à 4 Faire
+        somme := somme + notes[i]
+    FinPour
+    
+    moyenne := somme / 5
+    Ecrire("Somme des notes:", somme)
+    Ecrire("Moyenne:", moyenne)
+Fin

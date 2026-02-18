@@ -1,0 +1,11 @@
+Algorithme Factorielle
+Variables
+    n, i, fact: Entier
+Debut
+    n := 5
+    fact := 1
+    Pour i allant de 1 à n Faire
+        fact := fact * i
+    FinPour
+    Ecrire("Factorielle de", n, "est", fact)
+Fin

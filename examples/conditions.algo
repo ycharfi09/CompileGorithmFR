@@ -1,0 +1,17 @@
+Algorithme Conditions
+Variables
+    age: Entier
+    majeur: Booleen
+Debut
+    age := 20
+    
+    Si age >= 18 Alors
+        majeur := Vrai
+        Ecrire("Vous êtes majeur")
+    Sinon
+        majeur := Faux
+        Ecrire("Vous êtes mineur")
+    FinSi
+    
+    Ecrire("Majeur:", majeur)
+Fin

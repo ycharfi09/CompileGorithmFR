@@ -1,0 +1,9 @@
+Algorithme Somme
+Variables
+    a, b, resultat: Entier
+Debut
+    a := 15
+    b := 27
+    resultat := a + b
+    Ecrire("La somme de", a, "et", b, "est", resultat)
+Fin
