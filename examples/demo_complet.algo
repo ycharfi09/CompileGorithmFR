@@ -1,0 +1,50 @@
+Algorithme DemoComplet
+Variables
+    // Variables simples
+    nom: Chaine
+    age: Entier
+    estMajeur: Booleen
+    
+    // Tableau
+    scores: Tableau[3] de Entier
+    i, total: Entier
+    moyenne: Reel
+    
+Debut
+    // Démonstration des opérations de base
+    nom := "Alice"
+    age := 25
+    
+    // Opérations conditionnelles
+    Si age >= 18 Alors
+        estMajeur := Vrai
+        Ecrire(nom, "est majeur(e)")
+    Sinon
+        estMajeur := Faux
+        Ecrire(nom, "est mineur(e)")
+    FinSi
+    
+    // Manipulation de tableaux
+    scores[0] := 85
+    scores[1] := 92
+    scores[2] := 78
+    
+    total := 0
+    Pour i allant de 0 a 2 Faire
+        total := total + scores[i]
+        Ecrire("Score", i, ":", scores[i])
+    FinPour
+    
+    moyenne := total / 3
+    Ecrire("Moyenne des scores:", moyenne)
+    
+    // Boucle TantQue
+    i := 1
+    Ecrire("Compte à rebours:")
+    TantQue i <= 5 Faire
+        Ecrire(i)
+        i := i + 1
+    FinTantQue
+    
+    Ecrire("Programme terminé!")
+Fin
